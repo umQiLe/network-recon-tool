@@ -4,7 +4,6 @@ from tkinter import ttk
 from scapy.all import ARP, Ether, srp
 import threading
 
-
 def scan_network(ip_range):
     arp_request = ARP(pdst=ip_range)
     ether = Ether(dst="ff:ff:ff:ff:ff:ff")
